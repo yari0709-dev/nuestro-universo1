@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestro Universo</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <div class="estrellas"></div>
+
+    <nav>
+        <h2>✦ Nuestro Universo</h2>
+        <div class="menu">
+            <a href="../index.html">Inicio</a>
+            <a href="historia.html">Historia</a>
+            <a href="recuerdos.html">Recuerdos</a>
+            <a href="carta.html">Carta</a>
+            <a href="universo.html">Universo</a>
+        </div>
+    </nav>
+
+    <main class="contenido-pagina">
+        <h1>Nuestro pequeño universo 🌌</h1>
+
+        <p>
+            Cada planeta representa algo hermoso de nuestra relación.
+            Selecciona uno para descubrir su mensaje.
+        </p>
+
+        <div class="planetas">
+            <button class="planeta tierra" onclick="mensaje('Tierra', 'Mi hogar favorito siempre será estar a tu lado.')">
+                🌍
+                <small>Tierra</small>
+            </button>
+
+            <button class="planeta marte" onclick="mensaje('Marte', 'Contigo cualquier aventura se convierte en algo especial.')">
+                🔴
+                <small>Marte</small>
+            </button>
+
+            <button class="planeta saturno" onclick="mensaje('Saturno', 'Como sus anillos, quiero que nuestro amor siga rodeándonos.')">
+                🪐
+                <small>Saturno</small>
+            </button>
+
+            <button class="planeta luna" onclick="mensaje('Luna', 'Incluso en mis noches más oscuras, tú eres mi luz.')">
+                🌙
+                <small>Luna</small>
+            </button>
+
+            <button class="planeta estrella" onclick="mensaje('Estrella', 'Entre millones de estrellas, siempre te elegiría a ti.')">
+                ⭐
+                <small>Estrella</small>
+            </button>
+        </div>
+
+        <div class="mensaje-planeta" id="mensajePlaneta">
+            <h2>Elige un planeta ❤️</h2>
+            <p>Aquí aparecerá tu mensaje especial.</p>
+        </div>
+
+        <h2>Mi universo eres tú.</h2>
+        <p>Gracias por estos 2 años y 2 meses.</p>
+
+        <a class="boton" href="../index.html">Volver al inicio</a>
+    </main>
+
+    <footer>Hasta el infinito y más allá ❤️</footer>
+
+    <script>
+        function mensaje(nombre, texto) {
+            document.getElementById("mensajePlaneta").innerHTML =
+                "<h2>" + nombre + "</h2><p>" + texto + "</p>";
+        }
+    </script>
+</body>
+</html>
